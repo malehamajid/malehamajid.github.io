@@ -1,10 +1,244 @@
+```html
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Maleha's Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maleha Majid | ML Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f7fc;
+    color:#333;
+}
+
+header{
+    background:linear-gradient(135deg,#4f46e5,#7c3aed);
+    color:white;
+    text-align:center;
+    padding:80px 20px;
+}
+
+header h1{
+    font-size:3rem;
+}
+
+header p{
+    margin-top:10px;
+    font-size:1.2rem;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 25px;
+    background:white;
+    color:#4f46e5;
+    text-decoration:none;
+    border-radius:25px;
+    font-weight:bold;
+}
+
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+    padding:50px 0;
+}
+
+section{
+    margin-bottom:60px;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:25px;
+    color:#4f46e5;
+}
+
+.about{
+    text-align:center;
+    line-height:1.8;
+}
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+}
+
+.skill{
+    background:white;
+    padding:12px 20px;
+    border-radius:20px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h3{
+    margin-bottom:10px;
+    color:#4f46e5;
+}
+
+.contact{
+    text-align:center;
+}
+
+.contact a{
+    color:#4f46e5;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+footer{
+    text-align:center;
+    background:#111827;
+    color:white;
+    padding:20px;
+}
+</style>
 </head>
+
 <body>
-    <h1>Welcome to My Portfolio</h1>
-    <p>My name is Maleha Majid.</p>
+
+<header>
+    <h1>Maleha Majid</h1>
+    <p>Machine Learning Enthusiast | Data Science Student</p>
+    <a class="btn" href="https://github.com/malehamajid" target="_blank">GitHub Profile</a>
+</header>
+
+<div class="container">
+
+<section>
+    <h2>About Me</h2>
+    <div class="about">
+        <p>
+            I am a Computer Science student passionate about Machine Learning,
+            Data Science, and Artificial Intelligence. I have completed
+            multiple ML projects and a remote internship focused on
+            real-world machine learning applications.
+        </p>
+    </div>
+</section>
+
+<section>
+    <h2>Skills</h2>
+    <div class="skills">
+        <div class="skill">Python</div>
+        <div class="skill">Machine Learning</div>
+        <div class="skill">Data Science</div>
+        <div class="skill">Pandas</div>
+        <div class="skill">NumPy</div>
+        <div class="skill">Scikit-Learn</div>
+        <div class="skill">SQL</div>
+        <div class="skill">Git & GitHub</div>
+    </div>
+</section>
+
+<section>
+    <h2>Projects</h2>
+
+    <div class="projects">
+
+        <div class="card">
+            <h3>Sales Forecasting</h3>
+            <p>
+                Developed a time-series forecasting model to predict future
+                sales trends using machine learning techniques.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Tree Species Classification</h3>
+            <p>
+                Built a machine learning model to classify tree species
+                using leaf characteristics and image-based features.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>News Analysis Project</h3>
+            <p>
+                Applied machine learning techniques on news datasets for
+                classification and predictive analysis.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Adaptive Synthetic Data Augmentation Toolkit</h3>
+            <p>
+                Generated synthetic data using SDV/CTGAN and implemented
+                a retraining pipeline for model improvement.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <h2>Experience</h2>
+    <div class="card">
+        <h3>Machine Learning Intern - ITSolera</h3>
+        <p>
+            Worked on machine learning projects, data preprocessing,
+            model training, evaluation, and practical AI workflows.
+        </p>
+    </div>
+</section>
+
+<section>
+    <h2>Contact</h2>
+    <div class="contact">
+        <p>Email: malehamajid190@gmail.com</p>
+        <br>
+        <p>
+            GitHub:
+            <a href="https://github.com/malehamajid" target="_blank">
+                github.com/malehamajid
+            </a>
+        </p>
+        <br>
+        <p>
+            LinkedIn:
+            <a href="https://www.linkedin.com/in/maleha-majid-2021a234b"
+               target="_blank">
+                View LinkedIn Profile
+            </a>
+        </p>
+    </div>
+</section>
+
+</div>
+
+<footer>
+    © 2026 Maleha Majid | Machine Learning Portfolio
+</footer>
+
 </body>
 </html>
+```
