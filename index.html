@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Maleha Majid | ML Portfolio</title>
+<title>Maleha Majid | AI Portfolio</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
@@ -16,33 +16,34 @@ font-family:'Poppins',sans-serif;
 }
 
 body{
-background:#f8fafc;
-color:#0f172a;
+background:linear-gradient(135deg,#0f172a,#1e293b);
+color:white;
 }
 
 /* NAV */
 nav{
 position:fixed;
-top:0;
 width:100%;
-background:white;
-box-shadow:0 2px 10px rgba(0,0,0,0.05);
+top:0;
+background:rgba(15,23,42,0.7);
+backdrop-filter:blur(12px);
 display:flex;
 justify-content:space-between;
 align-items:center;
 padding:15px 8%;
 z-index:1000;
+border-bottom:1px solid rgba(255,255,255,0.08);
 }
 
 nav h2{
-color:#2563eb;
+color:#38bdf8;
 }
 
 nav a{
+color:#e2e8f0;
 margin:0 10px;
 text-decoration:none;
-color:#0f172a;
-font-weight:500;
+font-size:14px;
 }
 
 /* HERO */
@@ -53,51 +54,68 @@ flex-direction:column;
 justify-content:center;
 align-items:center;
 text-align:center;
-padding:0 20px;
-background:linear-gradient(135deg,#e0f2fe,#f8fafc);
+padding:20px;
+background:
+radial-gradient(circle at top,#38bdf8 0%,transparent 40%),
+radial-gradient(circle at bottom,#a855f7 0%,transparent 40%);
 }
 
 .hero h1{
 font-size:3rem;
-color:#0f172a;
 }
 
 .hero span{
-color:#2563eb;
+color:#38bdf8;
 }
 
 .hero p{
-margin-top:10px;
 max-width:600px;
-color:#475569;
+margin-top:10px;
+color:#cbd5e1;
 }
 
 .btn{
 margin-top:20px;
-padding:12px 25px;
-background:#2563eb;
-color:white;
+padding:12px 28px;
+background:linear-gradient(135deg,#38bdf8,#a855f7);
+border:none;
 border-radius:30px;
-text-decoration:none;
+color:white;
 font-weight:600;
+text-decoration:none;
 transition:0.3s;
 }
 
 .btn:hover{
-background:#1d4ed8;
 transform:scale(1.05);
+box-shadow:0 0 20px rgba(56,189,248,0.4);
 }
 
 /* SECTIONS */
 section{
-padding:80px 10%;
+padding:90px 10%;
 }
 
 .title{
 text-align:center;
 font-size:2rem;
 margin-bottom:40px;
-color:#2563eb;
+color:#38bdf8;
+}
+
+/* GLASS CARD */
+.card{
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(12px);
+border:1px solid rgba(255,255,255,0.1);
+padding:20px;
+border-radius:15px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 10px 30px rgba(56,189,248,0.2);
 }
 
 /* GRID */
@@ -107,56 +125,32 @@ grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
 gap:20px;
 }
 
-/* CARD */
-.card{
-background:white;
-padding:20px;
-border-radius:15px;
-box-shadow:0 5px 20px rgba(0,0,0,0.05);
-transition:0.3s;
-}
-
-.card:hover{
-transform:translateY(-8px);
-box-shadow:0 10px 30px rgba(37,99,235,0.15);
-}
-
-.card h3{
-color:#2563eb;
-margin-bottom:10px;
-}
-
 /* SKILLS */
 .skill{
-background:#eff6ff;
-border:1px solid #bfdbfe;
 padding:10px;
 border-radius:20px;
 text-align:center;
+background:rgba(56,189,248,0.08);
+border:1px solid rgba(56,189,248,0.2);
 transition:0.3s;
 }
 
 .skill:hover{
-background:#dbeafe;
-transform:scale(1.05);
+transform:scale(1.07);
+background:rgba(168,85,247,0.15);
 }
 
 /* CONTACT */
 .contact{
 text-align:center;
-background:white;
-padding:30px;
-border-radius:15px;
-box-shadow:0 5px 20px rgba(0,0,0,0.05);
 }
 
 /* FOOTER */
 footer{
 text-align:center;
 padding:20px;
-background:#0f172a;
-color:white;
-margin-top:40px;
+color:#94a3b8;
+border-top:1px solid rgba(255,255,255,0.08);
 }
 </style>
 </head>
@@ -176,7 +170,7 @@ margin-top:40px;
 <!-- HERO -->
 <div class="hero">
 <h1>Hi, I'm <span>Maleha Majid</span></h1>
-<p>Machine Learning Enthusiast • Data Science Student • API Developer building real-world AI solutions</p>
+<p>Machine Learning Enthusiast • Data Scientist • API Developer building real-world AI systems</p>
 <a class="btn" href="https://github.com/malehamajid" target="_blank">View GitHub</a>
 </div>
 
@@ -184,8 +178,8 @@ margin-top:40px;
 <section id="about">
 <div class="title">About Me</div>
 <div class="card">
-I am a Computer Science student passionate about Machine Learning, Data Science and AI.
-I enjoy building real-world intelligent systems and deploying ML models.
+I am a Computer Science student passionate about Machine Learning, Data Science and Artificial Intelligence.
+I enjoy building real-world intelligent systems and deploying ML models into production.
 </div>
 </section>
 
@@ -219,22 +213,22 @@ I enjoy building real-world intelligent systems and deploying ML models.
 
 <div class="card">
 <h3>Sales Forecasting</h3>
-<p>Predicts future sales using ML time-series models.</p>
+<p>ML model for predicting future sales trends using time-series data.</p>
 </div>
 
 <div class="card">
 <h3>Tree Classification</h3>
-<p>ML model for classifying tree species using leaf features.</p>
+<p>Classifies tree species using ML algorithms and feature engineering.</p>
 </div>
 
 <div class="card">
 <h3>News Analysis</h3>
-<p>AI-based classification of news articles.</p>
+<p>AI system for categorizing and analyzing news articles.</p>
 </div>
 
 <div class="card">
 <h3>Synthetic Data Toolkit</h3>
-<p>CTGAN-based synthetic data generation pipeline.</p>
+<p>CTGAN-based synthetic data generation with retraining pipeline.</p>
 </div>
 
 </div>
@@ -244,7 +238,7 @@ I enjoy building real-world intelligent systems and deploying ML models.
 <section id="contact">
 <div class="title">Contact</div>
 
-<div class="contact">
+<div class="card contact">
 <p>Email: malehamajid190@gmail.com</p>
 <p>GitHub: github.com/malehamajid</p>
 <p>LinkedIn: Available on profile</p>
@@ -252,7 +246,7 @@ I enjoy building real-world intelligent systems and deploying ML models.
 </section>
 
 <footer>
-© 2026 Maleha Majid | ML Engineer Portfolio
+© 2026 Maleha Majid | AI & ML Portfolio
 </footer>
 
 </body>
