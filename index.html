@@ -3,45 +3,46 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Maleha Majid | AI Portfolio</title>
+<title>Maleha Majid | ML Portfolio</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:'Orbitron',sans-serif;
+font-family:'Poppins',sans-serif;
 }
 
 body{
-background:#050816;
-color:white;
-overflow-x:hidden;
+background:#f8fafc;
+color:#0f172a;
 }
 
-/* glowing background */
-body::before{
-content:'';
+/* NAV */
+nav{
 position:fixed;
-width:400px;
-height:400px;
-background:radial-gradient(circle,#00f5ff,transparent 60%);
-top:-100px;
-left:-100px;
-filter:blur(80px);
+top:0;
+width:100%;
+background:white;
+box-shadow:0 2px 10px rgba(0,0,0,0.05);
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 8%;
+z-index:1000;
 }
 
-body::after{
-content:'';
-position:fixed;
-width:400px;
-height:400px;
-background:radial-gradient(circle,#a855f7,transparent 60%);
-bottom:-100px;
-right:-100px;
-filter:blur(80px);
+nav h2{
+color:#2563eb;
+}
+
+nav a{
+margin:0 10px;
+text-decoration:none;
+color:#0f172a;
+font-weight:500;
 }
 
 /* HERO */
@@ -52,132 +53,147 @@ flex-direction:column;
 justify-content:center;
 align-items:center;
 text-align:center;
+padding:0 20px;
+background:linear-gradient(135deg,#e0f2fe,#f8fafc);
 }
 
-h1{
+.hero h1{
 font-size:3rem;
-color:#00f5ff;
-text-shadow:0 0 20px #00f5ff;
+color:#0f172a;
 }
 
-.typing{
+.hero span{
+color:#2563eb;
+}
+
+.hero p{
 margin-top:10px;
-color:#a855f7;
-font-size:1.2rem;
-border-right:2px solid white;
-white-space:nowrap;
-overflow:hidden;
-width:0;
-animation:typing 4s steps(40,end) forwards, blink .7s infinite;
-}
-
-@keyframes typing{
-to{width:420px;}
-}
-
-@keyframes blink{
-50%{border-color:transparent;}
+max-width:600px;
+color:#475569;
 }
 
 .btn{
 margin-top:20px;
 padding:12px 25px;
-background:linear-gradient(90deg,#00f5ff,#a855f7);
-border:none;
+background:#2563eb;
+color:white;
 border-radius:30px;
-color:black;
-font-weight:bold;
 text-decoration:none;
+font-weight:600;
+transition:0.3s;
 }
 
-/* sections */
-.section{
+.btn:hover{
+background:#1d4ed8;
+transform:scale(1.05);
+}
+
+/* SECTIONS */
+section{
 padding:80px 10%;
 }
 
 .title{
 text-align:center;
 font-size:2rem;
-color:#00f5ff;
 margin-bottom:40px;
+color:#2563eb;
 }
 
-/* grid */
+/* GRID */
 .grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
 gap:20px;
 }
 
-/* cards */
+/* CARD */
 .card{
-background:rgba(255,255,255,0.05);
+background:white;
 padding:20px;
 border-radius:15px;
-border:1px solid rgba(0,245,255,0.2);
+box-shadow:0 5px 20px rgba(0,0,0,0.05);
 transition:0.3s;
 }
 
 .card:hover{
-transform:translateY(-10px);
-box-shadow:0 0 20px #00f5ff;
+transform:translateY(-8px);
+box-shadow:0 10px 30px rgba(37,99,235,0.15);
 }
 
-/* skills */
+.card h3{
+color:#2563eb;
+margin-bottom:10px;
+}
+
+/* SKILLS */
 .skill{
-padding:12px;
+background:#eff6ff;
+border:1px solid #bfdbfe;
+padding:10px;
 border-radius:20px;
 text-align:center;
-background:rgba(0,245,255,0.08);
-border:1px solid rgba(0,245,255,0.3);
 transition:0.3s;
 }
 
 .skill:hover{
-transform:scale(1.1);
-box-shadow:0 0 15px #00f5ff;
+background:#dbeafe;
+transform:scale(1.05);
 }
 
-/* footer */
+/* CONTACT */
+.contact{
+text-align:center;
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,0.05);
+}
+
+/* FOOTER */
 footer{
 text-align:center;
 padding:20px;
-color:#888;
+background:#0f172a;
+color:white;
+margin-top:40px;
 }
 </style>
 </head>
 
 <body>
 
+<nav>
+<h2>Maleha.dev</h2>
+<div>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
 <!-- HERO -->
 <div class="hero">
-<h1>Maleha Majid</h1>
-
-<div class="typing">
-AI Engineer • Machine Learning • Data Scientist • API Developer
-</div>
-
-<a class="btn" href="https://github.com/malehamajid" target="_blank">
-View GitHub
-</a>
+<h1>Hi, I'm <span>Maleha Majid</span></h1>
+<p>Machine Learning Enthusiast • Data Science Student • API Developer building real-world AI solutions</p>
+<a class="btn" href="https://github.com/malehamajid" target="_blank">View GitHub</a>
 </div>
 
 <!-- ABOUT -->
-<div class="section">
+<section id="about">
 <div class="title">About Me</div>
 <div class="card">
-I am a Computer Science student passionate about Artificial Intelligence,
-Machine Learning, and Data Science. I build intelligent systems using real-world data
-and enjoy turning ideas into deployable ML solutions.
+I am a Computer Science student passionate about Machine Learning, Data Science and AI.
+I enjoy building real-world intelligent systems and deploying ML models.
 </div>
-</div>
+</section>
 
 <!-- SKILLS -->
-<div class="section">
-<div class="title">⚡ Skills</div>
+<section id="skills">
+<div class="title">Skills</div>
 
 <div class="grid">
-
 <div class="skill">Python</div>
 <div class="skill">Machine Learning</div>
 <div class="skill">Data Science</div>
@@ -187,59 +203,56 @@ and enjoy turning ideas into deployable ML solutions.
 <div class="skill">SQL</div>
 <div class="skill">Git & GitHub</div>
 <div class="skill">Random Forest</div>
-<div class="skill">Decision Trees</div>
 <div class="skill">SVM</div>
 <div class="skill">Logistic Regression</div>
 <div class="skill">API Development</div>
 <div class="skill">Flask / FastAPI</div>
 <div class="skill">Model Deployment</div>
-
 </div>
-</div>
+</section>
 
 <!-- PROJECTS -->
-<div class="section">
-<div class="title">🚀 Projects</div>
+<section id="projects">
+<div class="title">Projects</div>
 
 <div class="grid">
 
 <div class="card">
 <h3>Sales Forecasting</h3>
-<p>Machine learning model for predicting future sales trends.</p>
+<p>Predicts future sales using ML time-series models.</p>
 </div>
 
 <div class="card">
 <h3>Tree Classification</h3>
-<p>ML model for classifying tree species using leaf data.</p>
+<p>ML model for classifying tree species using leaf features.</p>
 </div>
 
 <div class="card">
 <h3>News Analysis</h3>
-<p>AI system for news classification and analysis.</p>
+<p>AI-based classification of news articles.</p>
 </div>
 
 <div class="card">
 <h3>Synthetic Data Toolkit</h3>
-<p>CTGAN + SDV based data generation and retraining pipeline.</p>
+<p>CTGAN-based synthetic data generation pipeline.</p>
 </div>
 
 </div>
-</div>
+</section>
 
 <!-- CONTACT -->
-<div class="section">
-<div class="title">📞 Contact</div>
+<section id="contact">
+<div class="title">Contact</div>
 
-<div class="card">
+<div class="contact">
 <p>Email: malehamajid190@gmail.com</p>
 <p>GitHub: github.com/malehamajid</p>
 <p>LinkedIn: Available on profile</p>
 </div>
-
-</div>
+</section>
 
 <footer>
-© 2026 Maleha Majid • AI / ML Portfolio ⚡
+© 2026 Maleha Majid | ML Engineer Portfolio
 </footer>
 
 </body>
