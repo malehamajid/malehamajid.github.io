@@ -126,20 +126,25 @@ gap:20px;
 }
 
 /* SKILLS */
-.skill{
-padding:10px;
-border-radius:20px;
-text-align:center;
-background:rgba(56,189,248,0.08);
-border:1px solid rgba(56,189,248,0.2);
+.tag{
+display:inline-block;
+margin:5px;
+padding:8px 14px;
+border-radius:999px;
+background:rgba(56, 189, 248, 0.08);
+border:1px solid rgba(56, 189, 248, 0.3);
+font-size:13px;
+color:#e2e8f0;
+backdrop-filter:blur(8px);
 transition:0.3s;
 }
 
-.skill:hover{
-transform:scale(1.07);
-background:rgba(168,85,247,0.15);
+.tag:hover{
+background:linear-gradient(135deg, rgba(56,189,248,0.2), rgba(168,85,247,0.2));
+border-color:rgba(168,85,247,0.5);
+transform:scale(1.05);
+box-shadow:0 0 15px rgba(56,189,248,0.2);
 }
-
 /* CONTACT */
 .contact{
 text-align:center;
@@ -186,6 +191,17 @@ I am a Computer Science student (BSCS) passionate about Artificial Intelligence,
 <section id="skills">
 <h2 class="title">Skills</h2>
 
+  
+<div class="card">
+<h3>AI & Data Science</h3>
+<span class="tag">Machine Learning</span>
+<span class="tag">Data Science</span>
+<span class="tag">Data Analysis</span>
+<span class="tag">Model Building</span>
+<span class="tag">API Development</span>
+</div>
+
+<br>
 <div class="card">
 <h3>Programming Languages</h3>
 <span class="tag">Python</span>
@@ -211,16 +227,7 @@ I am a Computer Science student (BSCS) passionate about Artificial Intelligence,
 
 <br>
 
-<div class="card">
-<h3>AI & Data Science</h3>
-<span class="tag">Machine Learning</span>
-<span class="tag">Data Science</span>
-<span class="tag">Data Analysis</span>
-<span class="tag">Model Building</span>
-<span class="tag">API Development</span>
-</div>
 
-<br>
 
 <div class="card">
 <h3>Tools & Libraries</h3>
