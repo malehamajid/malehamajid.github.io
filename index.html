@@ -164,15 +164,20 @@ cursor:pointer;
 color:#38bdf8;
 }
 
-/* mobile only */
+/* default desktop */
+.nav-menu{
+display:flex;
+}
+
+/* mobile */
 @media (max-width:768px){
 
 .menu-toggle{
 display:block;
 }
 
-#navMenu{
-display:none;
+.nav-menu{
+display:none !important;
 flex-direction:column;
 width:100%;
 margin-top:10px;
@@ -182,13 +187,13 @@ padding:10px;
 border-radius:10px;
 }
 
-#navMenu a{
-display:block;
-margin:10px 0;
+.nav-menu.active{
+display:flex !important;
 }
 
-#navMenu.active{
-display:flex;
+.nav-menu a{
+display:block;
+margin:10px 0;
 }
 }
 </style>
@@ -201,7 +206,7 @@ display:flex;
 
 <div class="menu-toggle" onclick="toggleMenu()">☰</div>
 
-<div id="navMenu">
+<div id="navMenu" class="nav-menu">
 <a href="#about">About</a>
 <a href="#skills">Skills</a>
 <a href="#projects">Projects</a>
