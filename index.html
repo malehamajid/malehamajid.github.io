@@ -157,6 +157,40 @@ padding:20px;
 color:#94a3b8;
 border-top:1px solid rgba(255,255,255,0.08);
 }
+.menu-toggle{
+display:none;
+font-size:28px;
+cursor:pointer;
+color:#38bdf8;
+}
+
+/* mobile only */
+@media (max-width:768px){
+
+.menu-toggle{
+display:block;
+}
+
+#navMenu{
+display:none;
+flex-direction:column;
+width:100%;
+margin-top:10px;
+background:rgba(15,23,42,0.9);
+backdrop-filter:blur(10px);
+padding:10px;
+border-radius:10px;
+}
+
+#navMenu a{
+display:block;
+margin:10px 0;
+}
+
+#navMenu.active{
+display:flex;
+}
+}
 </style>
 </head>
 
@@ -164,7 +198,10 @@ border-top:1px solid rgba(255,255,255,0.08);
 
 <nav>
 <h2>Portfolio</h2>
-<div>
+
+<div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+<div id="navMenu">
 <a href="#about">About</a>
 <a href="#skills">Skills</a>
 <a href="#projects">Projects</a>
@@ -281,6 +318,10 @@ I am a Computer Science student (BSCS) passionate about Artificial Intelligence,
 <footer>
 © 2026 Maleha Majid | AI & Data Science Portfolio
 </footer>
-
+<script>
+function toggleMenu(){
+document.getElementById("navMenu").classList.toggle("active");
+}
+</script>
 </body>
 </html>
